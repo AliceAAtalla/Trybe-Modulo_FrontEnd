@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário de Currículo</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<div id="name">
+					<label for="">Name:</label>
+					<input
+						class="curriculo"
+						type="text"
+						placeholder="Digite seu nome completo"
+						required="required"
+						maxlength="40"
+					/>
+				</div>
+				<div id="email">
+					<label for="">Email</label>
+					<input
+						class="curriculo"
+						type="email"
+						placeholder="Digite seu melhor email"
+						required="required"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+					/>
+				</div>
+				<div id="cpf">
+					<label for="">CPF</label>
+					<input
+						class="curriculo"
+						type="text"
+						required="required"
+						maxlength="11"
+					/>
+				</div>
+				<div id="endereço">
+					<label for="">Endereço</label>
+					<input
+						class="curriculo"
+						type="text"
+						placeholder="Digite seu endereço"
+						maxlength="200"
+					/>
+				</div>
+				<div id="cidade">
+					<label for="">Cidade</label>
+					<input
+						class="curriculo"
+						type="text"
+						maxlength="28"
+						required="required"
+					/>
+				</div>
+				<div id="estado">
+					<label for="">Estado</label>
+					<select class="curriculo" name="" id="estados">
+						<option value="Nenhuma opção selecionada">Selecione uma opção</option>
+					</select>
+				</div>
+				<div id="tipoderesidencia">
+					<label for="">Tipo de Residencia</label>
+					<input
+						type="radio"
+						id="tipoCasa"
+						name="tipo"
+						value="Casa"
+						checked
+					/>
+					<label for="tipoCasa">Casa</label>
+					<input
+						type="radio"
+						id="tipoApto"
+						name="tipo"
+						value="Apartamento"
+					/>
+					<label for="tipoApto">Apartamento</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Dados do seu último emprego</legend>
+				<div id="resumo">
+					<label for="">Resumo do currículo</label><br />
+					<textarea
+						class="curriculo"
+						name=""
+						id=""
+						required="required"
+						maxlength="1000"
+						cols="70"
+						rows="8"
+					></textarea>
+				</div>
+				<div id="cargo">
+					<label for="">Cargo</label>
+					<input
+						class="curriculo"
+						type="text"
+						maxlength="40"
+						required="required"
+					/>
+				</div>
+				<div id="descriptionCargo">
+					<label for="">Descrição do cargo</label>
+					<input
+						class="curriculo"
+						type="text"
+						maxlength="500"
+						required="required"
+					/>
+				</div>
+				<div id="date-container">
+					<label for="">Data de início</label>
+					<input
+						class="curriculo"
+						id="inpDate"
+						type="text"
+						required="required"
+						pattern="(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\d\d"
+					/>
+				</div>
+			</fieldset>
+			<div i="buttons">
+				<button type="submit" id="enviar">Enviar</button>
+				<button type="reset" id="reset">Resetar</button>
+			</div>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
