@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário de Currículo</title>
+		<link rel="stylesheet" href="libs/materialize.min.css" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="indigo lighten-4">
+			<nav class="indigo">
+				<div class="nav-wrapper container">
+					<a href="#" class="center brand-logo">Curriculum Form</a>
+				</div>
+      </nav>
+      <br>
+      <div class="container">
+        <h5>Fill out the form below:</h5>
+      </div>
+      <hr>
+      <br>
+			<div class="container">
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6" id="name">
+								<i class="material-icons prefix">face</i>
+								<input
+									id="inpName"
+									type="text"
+									placeholder="Digite seu nome completo"
+									required="required"
+									maxlength="40"
+								/>
+								<label for="inpName">
+									Name
+								</label>
+							</div>
+							<div class="input-field col s6" id="email">
+								<i class="material-icons prefix">email</i>
+								<input id="inpEmail" class="validate" type="email" />
+								<label for="inpEmail">
+									Email
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6" id="cpf">
+								<label for="inpCPF">
+									CPF
+								</label>
+								<input
+									id="inpCPF"
+									class="curriculo"
+									type="text"
+									required="required"
+									maxlength="11"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12" id="address">
+								<label for="inpAddress">
+									Address
+								</label>
+								<input
+									id="inpAddress"
+									class="curriculo"
+									type="text"
+									maxlength="200"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6" id="city">
+								<label for="inpCity">City</label>
+								<input
+									id="inpCity"
+									class="curriculo"
+									type="text"
+									maxlength="28"
+									required="required"
+								/>
+							</div>
+							<div class="input-field col s6" id="states">
+								<select name="" id="state">
+									<option value="" disabled selected>State</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div id="typeResidence">
+								<h6>Type Of Residence</h6>
+								<p>
+									<label for="typeHouse">
+										<input
+											class="with-gap"
+											type="radio"
+											id="typeHouse"
+											name="type"
+											value="House"
+											checked
+										/>
+										<span>House</span>
+									</label>
+								</p>
+								<p>
+									<label for="typeApt">
+										<input
+											class="with-gap"
+											type="radio"
+											id="typeApt"
+											name="type"
+											value="Apartment"
+										/>
+										<span>
+											Apartment
+										</span>
+									</label>
+								</p>
+							</div>
+						</div>
+						<div id="resumo" class="input-field col s12">
+							<i class="material-icons prefix">edit_mode</i>
+							<label for="text">Resumo do currículo</label><br />
+							<textarea
+								class="materialize-textarea"
+								name=""
+								id="text"
+								required="required"
+								maxlength="1000"
+								cols="70"
+								rows="8"
+							></textarea>
+						</div>
+						<div class="row">
+							<div id="positionHeld" class="input-field col s12">
+								<label for="position">Position Held</label>
+								<input
+									id="position"
+									class="curriculo"
+									type="text"
+									maxlength="40"
+									required="required"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div id="jobDescription" class="input-field col s12">
+								<label for="inpDescription">Job Description</label>
+								<input
+									id="inpDescription"
+									type="text"
+									maxlength="500"
+									required="required"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s4" id="date-container">
+								<label for="inpDate">Start Date</label>
+								<input class="datepicker" id="inpDate" type="text" required="required" />
+							</div>
+						</div>
+
+						<div id="buttons">
+							<button
+								class="waves-effect waves-light btn-small"
+								type="submit"
+								id="enviar"
+							>
+								Enviar
+							</button>
+							<button class="btn disabled" type="reset" id="reset">
+								Resetar
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<footer class="page-footer indigo">
+					<div class="container center-align">
+            Produced by Alice Arruda Atalla
+          </div>
+				</div>
+			</footer>
+		</header>
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Materialize JS -->
+		<script src="libs/materialize.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
