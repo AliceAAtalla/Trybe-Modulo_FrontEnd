@@ -24,19 +24,21 @@ let optionEstados = [
   'São Paulo',
 ]
 
-let estados = document.getElementById('estados');
+let select = document.getElementById('select');
 // Opção para escolher o Estado de residencia
-// método chama uma função uma vez para cada elemento em uma matriz, em ordem.
-optionEstados.forEach(function (elemento) {
-  estados.appendChild(new Option(elemento, elemento));// segundo elemento serve como value
+// método executa uma dada função em cada elemento de um array.
+optionEstados.forEach(function (objeto) {
+  select.appendChild(new Option(objeto, objeto));// segundo elemento serve como value
 });
+
 // Eventos ao clicar no botão enviar
 const btnEnviar = document.getElementById('enviar');
-btnEnviar.addEventListener('click', function (event) {
+btnEnviar.addEventListener('click', function (event) { // event é o btnEnviar
   verificar();// chama a função que verifica a data
   curriculo();// chama a função que cria o curriculo 
-  event.preventDefault();// Cancela o evento se for cancelável, sem parar a propagação do mesmo
-}, false);
+  event.preventDefault();// Cancela o evento se for cancelável, sem parar a propagação do mesm
+});
+
 // Verifica se a data esta dentro do exigido
 function verificar() {
   let inpDate = document.querySelector('#inpDate');
@@ -80,11 +82,11 @@ function curriculo() {
     curriculo();// e então adiciono o novo curriculo
   }
 }
-// Caso exista uma divCurriculo então excluo ao apertar no reset
+//Caso exista uma divCurriculo então excluo ao apertar no reset
 let btnReset = document.querySelector('#reset');
 btnReset.addEventListener('click', function () {
   let div = document.getElementById('divCurriculo');
-  if(div !== null) {
-    div.remove();
+  if (div !== null) {// se a div existir
+    div.remove();// removo ela também junto com o valor dos inputs
   }
 });
