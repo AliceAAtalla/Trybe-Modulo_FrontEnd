@@ -2,11 +2,6 @@ html {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 *,
 *:before,
 *:after {
@@ -14,6 +9,9 @@ body {
 }
 
 body {
+	background-color: rgb(246, 202, 250);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 100%;
 	line-height: 1.5em;
 }
@@ -28,20 +26,25 @@ p {
 	text-indent: 2em;
 }
 
+.header {
+  padding: 10px;
+}
+
 .header p {
 	text-indent: 0;
-	font-size: 18px;
 	text-align: center;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-header {
-	background-color: rgb(245, 223, 195);
+header,
+footer {
+	background-color: rgb(253, 176, 249);
 }
 
-footer {
-	background-color: rgb(245, 223, 195);
+.container li {
+  padding: 5px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 500px) {
@@ -51,16 +54,10 @@ footer {
 
 	.header {
 		margin: 20px 5px 10px;
-		padding: 10px;
 	}
 
 	.header p {
 		font-size: 16px;
-	}
-
-	.container li {
-		padding: 5px;
-		font-size: 14px;
 	}
 
 	h2 {
@@ -86,21 +83,15 @@ footer {
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
 	body {
-		margin: 10px 10px 10px;
+		margin: 10px;
 	}
 
 	.header {
 		margin: 20px 0 10px;
-		padding: 10px;
 	}
 
 	.header p {
 		font-size: 18px;
-	}
-
-	.container li {
-		padding: 5px;
-		font-size: 14px;
 	}
 
 	.header ul {
@@ -128,6 +119,62 @@ footer {
 	footer {
 		margin-top: 50px;
 		font-size: 12px;
+		padding: 25px;
+	}
+}
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+	body {
+		margin: 10px 40px;
+	}
+
+	.asides {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.header {
+		margin: 20px 0 10px;
+	}
+
+	.header p {
+		font-size: 20px;
+	}
+
+	.container li {
+		padding: 5px;
+		font-size: 16px;
+	}
+
+	.header ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		padding: 5px;
+	}
+
+	.aside-two {
+		background-color: rgb(253, 176, 249);
+	}
+
+	h2 {
+		padding: 5px;
+		font-size: 18px;
+	}
+
+	h1 {
+		padding: 25px 0 10px;
+		font-size: 20px;
+	}
+
+	.main-content p {
+		font-size: 16px;
+		margin: 15px;
+	}
+
+	footer {
+		margin-top: 50px;
+		font-size: 14px;
 		padding: 25px;
 	}
 }
