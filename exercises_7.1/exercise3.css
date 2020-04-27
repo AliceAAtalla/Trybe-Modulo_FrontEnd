@@ -88,13 +88,54 @@
 		display: none;
 	}
 
+	#content-container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	#content {
-		display: block;
 		width: 90%;
 	}
 
 	#aside {
 		width: 90%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#aside {
+		display: none;
+	}
+
+	body {
+		padding: 0;
 		margin: 0;
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+		position: fixed;
+	}
+
+	#navigation ul {
+		padding: 80px 10px 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#navigation li a {
+		border: #333;
+	}
+
+	#content {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+
+	#content img {
+		margin: 5px;
+		width: 100%;
 	}
 }
