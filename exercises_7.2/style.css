@@ -44,3 +44,9 @@
 	animation-play-state: running;
 }
 
+#exercise-6-square:hover + #exercise-6 {
+	animation-name: anima1;
+	animation-direction: reverse;
+	animation-duration: 5s;
+	animation-play-state: running;
+}
