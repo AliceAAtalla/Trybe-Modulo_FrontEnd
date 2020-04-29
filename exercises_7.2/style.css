@@ -49,6 +49,15 @@
 	}
 }
 
+@keyframes anima5 {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
+	}
+}
+
 #exercise-1 {
 	animation-name: anima1;
 	animation-delay: 1s;
@@ -138,3 +147,8 @@
 	animation: anima1 3s ease-in-out 2s infinite;
 }
 
+#exercise-12:active {
+	animation-name: anima5;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
