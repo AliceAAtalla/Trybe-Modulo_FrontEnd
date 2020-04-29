@@ -1,0 +1,154 @@
+@keyframes anima1 {
+	from {
+		margin-left: 0%;
+	}
+	to {
+		margin-left: 95%;
+	}
+}
+
+@keyframes anima2 {
+	from {
+		width: 0%;
+		height: 0%;
+	}
+	50% {
+		width: 100%;
+		height: 100%;
+	}
+	to {
+		width: 0%;
+		height: 0%;
+	}
+}
+
+@keyframes anima3 {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: yellow;
+	}
+}
+
+@keyframes anima4 {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: blue;
+	}
+	50% {
+		background-color: green;
+	}
+	75% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: red;
+	}
+}
+
+@keyframes anima5 {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
+	}
+}
+
+#exercise-1 {
+	animation-name: anima1;
+	animation-delay: 1s;
+	animation-duration: 3s;
+}
+
+#exercise-2 {
+	animation-name: anima1;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+#exercise-3 {
+	animation-name: anima1;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+#exercise-4 {
+	animation-name: anima1;
+	animation-duration: 5s;
+	animation-play-state: paused;
+}
+
+#exercise-4:hover {
+	animation-play-state: running;
+}
+
+#section-5:hover #exercise-5 {
+	animation-name: anima1;
+	animation-duration: 5s;
+	animation-play-state: running;
+}
+
+#exercise-6-square:hover + #exercise-6 {
+	animation-name: anima1;
+	animation-direction: reverse;
+	animation-duration: 5s;
+	animation-play-state: running;
+}
+
+#exercise-7 {
+	animation-name: anima2;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+#exercise-8 {
+	animation-name: anima3;
+	animation-duration: 4s;
+}
+
+#exercise-9 {
+	animation-name: anima4;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#exercise-10 {
+	animation-name: anima2, anima4;
+	animation-duration: 10s, 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#exercise-11_1 {
+	animation: anima1 3s linear 2s infinite;
+}
+
+#exercise-11_2 {
+	animation: anima1 3s cubic-bezier(1, 0.26, 0.22, 0.7) 2s infinite;
+}
+
+#exercise-11_3 {
+	animation: anima1 3s ease-in 2s infinite;
+}
+
+#exercise-11_4 {
+	animation: anima1 3s ease-out 2s infinite;
+}
+
+#exercise-11_5 {
+	animation: anima1 3s ease-in-out 2s infinite;
+}
+
+#exercise-12:active {
+	animation-name: anima5;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
