@@ -22,6 +22,15 @@
 	}
 }
 
+@keyframes anima3 {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: yellow;
+	}
+}
+
 #exercise-1 {
 	animation-name: anima1;
 	animation-delay: 1s;
@@ -70,4 +79,9 @@
 	animation-name: anima2;
 	animation-iteration-count: infinite;
 	animation-duration: 10s;
+}
+
+#exercise-8 {
+	animation-name: anima3;
+	animation-duration: 4s;
 }
