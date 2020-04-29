@@ -117,3 +117,24 @@
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
+
+#exercise-11_1 {
+	animation: anima1 3s linear 2s infinite;
+}
+
+#exercise-11_2 {
+	animation: anima1 3s cubic-bezier(1, 0.26, 0.22, 0.7) 2s infinite;
+}
+
+#exercise-11_3 {
+	animation: anima1 3s ease-in 2s infinite;
+}
+
+#exercise-11_4 {
+	animation: anima1 3s ease-out 2s infinite;
+}
+
+#exercise-11_5 {
+	animation: anima1 3s ease-in-out 2s infinite;
+}
+
