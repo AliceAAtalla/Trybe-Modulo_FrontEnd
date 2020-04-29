@@ -50,11 +50,20 @@
 }
 
 @keyframes anima5 {
-	from {
+	0% {
 		opacity: 100%;
 	}
-	to {
+	100% {
 		opacity: 0%;
+	}
+}
+
+@keyframes anima6 {
+	from {
+		margin-right: 0%;
+	}
+	to {
+		margin-right: 95%;
 	}
 }
 
@@ -80,9 +89,9 @@
 }
 
 #exercise-4 {
+	animation-play-state: paused;
 	animation-name: anima1;
 	animation-duration: 5s;
-	animation-play-state: paused;
 }
 
 #exercise-4:hover {
@@ -96,8 +105,7 @@
 }
 
 #exercise-6-square:hover + #exercise-6 {
-	animation-name: anima1;
-	animation-direction: reverse;
+	animation-name: anima6;
 	animation-duration: 5s;
 	animation-play-state: running;
 }
@@ -147,8 +155,13 @@
 	animation: anima1 3s ease-in-out 2s infinite;
 }
 
-#exercise-12:active {
+#exercise-12 {
 	animation-name: anima5;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#exercise-12:active {
+	animation-play-state: running;
 }
