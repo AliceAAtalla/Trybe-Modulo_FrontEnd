@@ -29,5 +29,18 @@
 }
 
 #exercise-4 {
-  
+	animation-name: anima1;
+	animation-duration: 5s;
+	animation-play-state: paused;
 }
+
+#exercise-4:hover {
+	animation-play-state: running;
+}
+
+#section-5:hover #exercise-5 {
+	animation-name: anima1;
+	animation-duration: 5s;
+	animation-play-state: running;
+}
+
