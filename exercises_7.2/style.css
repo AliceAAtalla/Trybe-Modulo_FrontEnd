@@ -13,3 +13,10 @@
 	animation-duration: 3s;
 }
 
+#exercise-2 {
+	animation-name: anima1;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
