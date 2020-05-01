@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+</head>
+<body>
+  <h3>Click Counter</h3>
+  <button id="button">Click Here!</button>
+
+  <script>
+    const btn = document.getElementById('button');
+    let clickCount = 0;
+
+    btn.addEventListener('click', () => {
+      clickCount += 1;
+      btn.innerHTML = `Click number: ${clickCount}`;
+    })
+
+  </script>
+</body>
+</html>
