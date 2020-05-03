@@ -5,19 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cartas</title>
 		<style>
-      body, html {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+			body,
+			html {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			.monte {
+				max-width: 100%;
+				display: flex;
+				justify-content: center;
+				margin-top: 30px;
+			}
 			.cards {
-				width: 200px;
+				width: 120px;
 				cursor: pointer;
 			}
 		</style>
 	</head>
 	<body>
-		<img class="cards" src="cartas/verso-da-carta.png" alt="monte" />
+		<div class="monte">
+			<img class="cards" src="cartas/verso-da-carta.png" alt="monte" />
+		</div>
 		<div class="baralho"></div>
 		<script></script>
 	</body>
