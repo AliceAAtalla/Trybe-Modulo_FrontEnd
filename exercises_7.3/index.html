@@ -15,19 +15,60 @@
 				max-width: 100%;
 				display: flex;
 				justify-content: center;
-				margin-top: 30px;
+				margin: 20px 0;
 			}
-			.cards {
+			.montante {
 				width: 120px;
 				cursor: pointer;
+			}
+			.baralho {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				flex-direction: row;
+				width: 70%;
+				margin-left: 200px;
+			}
+			.card {
+				height: 13%;
+				width: 13%;
+				margin-bottom: 20px;
+			}
+			.animation1 {
+			
+			}
+			.animation1:hover {
 			}
 		</style>
 	</head>
 	<body>
 		<div class="monte">
-			<img class="cards" src="cartas/verso-da-carta.png" alt="monte" />
+			<img class="montante" src="cartas/verso-da-carta.png" alt="monte" />
 		</div>
 		<div class="baralho"></div>
-		<script></script>
+		<script>
+			const montante = document.querySelector('.montante');
+			const baralho = document.querySelector('.baralho');
+			const cards = [
+				'cartas/cinco-de-ouros.png',
+				'cartas/nove-de-espadas.png',
+				'cartas/quatro-de-paus.png',
+				'cartas/seis-de-copas.png',
+				'cartas/sete-de-espadas.png',
+				'cartas/sete-de-paus.png',
+				'cartas/tres-de-ouros.png',
+			];
+			//Transformando a img do monte de cartas em um button;
+			montante.addEventListener('click', () => {
+				//criando um elemento imagem;
+				const randomCards = document.createElement('img');
+				//colocando dentro do src do elemento img uma carta do meu array cards aleatoriamente;
+				randomCards.src = cards[Math.floor(Math.random() * 7)];
+				//Adiciono essas cartas na minha div baralho
+				baralho.appendChild(randomCards);
+				//Adicionando uma classe para cada carta para arrumar o tamanho;
+				randomCards.classList.add('card');
+			});
+		</script>
 	</body>
 </html>
