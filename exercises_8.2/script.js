@@ -18,8 +18,8 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const exercise1 = (modificar, propriedade, valor) => {
-  modificar[propriedade] = valor;
+const exercise1 = (obj, propriedade, valor) => {
+  obj[propriedade] = valor;
 }
 
 exercise1(lesson2, 'turno', 'manhã');
@@ -35,3 +35,16 @@ const exercise2 = (obj) => {
 
 // -------------------------------------
 
+const exercise3 = (obj) => {
+  return Object.values(obj).length;
+}
+
+//console.log(exercise3(lesson1));
+
+// -------------------------------------
+
+const exercise4 = (obj) => {
+  return Object.values(obj);
+}
+
+//console.log(exercise4(lesson3));
