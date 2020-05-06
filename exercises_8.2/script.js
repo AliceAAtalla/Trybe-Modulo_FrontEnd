@@ -76,4 +76,51 @@ const exercise7 = (obj, n) => Object.values(obj)[n];
 
 // -------------------------------------
 
+const exercise8 = (obj, chave, valor) => {
+  if (obj[chave] === valor) {
+    return true;
+  }
+  return false;
+} 
 
+//console.log(exercise8(lesson3, 'turno', 'noite'))
+//console.log(exercise8(lesson3, 'turno', 'manhã'))
+
+// ----------------BONUS---------------------
+
+const getNumberMathStudents = (obj) => {
+  let assistiram = 0;
+  const chaves = Object.keys(obj);
+  for (i in chaves) {
+    if (obj[chaves[i]].materia === 'Matemática') {
+      assistiram += obj[chaves[i]].numeroEstudantes;
+    }
+  } 
+  return assistiram;
+}
+
+//console.log(getNumberMathStudents(allLessons));
+
+//-------
+
+const getInfo = (obj, nameTeacher) => {
+  const allLessons = [];
+  let allStudent = 0;
+  const valores = Object.values(obj);
+  for (i in valores) {
+    if (valores[i].professor === nameTeacher) {
+    allLessons.push(valores[i].materia)
+      allStudent += valores[i].numeroEstudantes;
+    }
+  }
+  return { lessons: allLessons, estudantes: allStudent };
+}
+
+const createRelatorio = (allLessons, nameTeacher) => {
+  const relatorio = {};
+  relatorio.professor = nameTeacher;
+  Object.assign(relatorio, getInfo(allLessons, nameTeacher));
+  return relatorio;
+}
+console.log(createRelatorio(allLessons, 'Maria Clara'));
+    
