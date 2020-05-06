@@ -48,3 +48,32 @@ const exercise4 = (obj) => {
 }
 
 //console.log(exercise4(lesson3));
+
+// -------------------------------------
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+//console.log(allLessons);
+
+// -------------------------------------
+
+const exercise6 = (obj) => {
+  let total = 0;
+  let chaves = Object.keys(obj);
+  for(i in chaves) {
+    total += obj[chaves[i]].numeroEstudantes
+  }
+  return total
+}
+
+//console.log(exercise6(allLessons));
+
+// -------------------------------------
+
+const exercise7 = (obj, n) => Object.values(obj)[n];
+
+//console.log(exercise7(lesson3, 1));
+
+// -------------------------------------
+
+
