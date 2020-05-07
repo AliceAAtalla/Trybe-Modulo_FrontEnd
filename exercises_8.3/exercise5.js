@@ -4,7 +4,8 @@ retorna o próprio array sem o elemento item caso ele exista no array*/
 const assert = require('assert');
 
 function myRemoveWithoutCopy(arr, item) {
-  for (let i = 0, len = arr.length; i < len; i += 1) {
+  let len = arr.length;
+  for (let i = 0; i < len; i += 1) {
     if (arr[i] === item) {
       /* O método splice() altera o conteúdo de uma lista, adicionando novos elementos 
       enquanto remove elementos antigos.*/
