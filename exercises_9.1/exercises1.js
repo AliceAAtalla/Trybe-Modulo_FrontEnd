@@ -65,10 +65,13 @@ const books = [
 
 //TODO => Encontre o nome da pessoa autora do livro nascida no ano de 1947.
 
-const authorBornIn1947 = () => {
-  const findBirthYear = element => element.author.birthYear === 1947;
-  const authorName = books.find(findBirthYear);
-  return authorName.author.name;
-}
+// const authorBornIn1947 = () => {
+//   const findBirthYear = objeto => objeto.author.birthYear === 1947;
+//   const authorName = books.find(findBirthYear);
+//   return authorName.author.name;
+// }
+
+//* One Line Resolution
+const authorBornIn1947 = () => books.find(objeto => objeto.author.birthYear === 1947).author.name;
 
 assert.equal(authorBornIn1947(), 'Stephen King');
