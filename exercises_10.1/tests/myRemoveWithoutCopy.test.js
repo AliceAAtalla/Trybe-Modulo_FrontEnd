@@ -13,7 +13,7 @@ test("Does not return the initial array", () => {
 // Faça uma chamada para a função myRemoveWithoutCopy e verifique se o array passado por parâmetro sofreu alterações
 test("Array passed by parameter has not changed", () => {
   const b = [1, 2, 3, 4];
-  myRemove(b, 1);
+  myRemoveWithoutCopy(b, 1);
   expect(b).toEqual([2, 3, 4]);
 })
 
