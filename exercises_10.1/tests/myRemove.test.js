@@ -12,8 +12,10 @@ test("Does not return the initial array", () => {
 
 // Verifique se o array passado por parâmetro não sofreu alterações
 test("Array passed by parameter has not changed", () => {
-  expect(myRemove([1, 2, 3, 4])).toEqual([1, 2, 3, 4]);
-})
+  const a = [1, 2, 3, 4];
+  myRemove(a, 1);
+  expect(a).toEqual([1, 2, 3, 4]);
+});
 
 // Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
 test("Removing missing number in array returns initial array", () => {
