@@ -17,11 +17,13 @@ const squaredNumber = () => {
       return acc = acc + curr;
     }, 0);
     if (sumAll < 8000) return resolve(sumAll);
-    return reject();
+    return reject(sumAll);
   })
+
   promise
-    .then(ok => console.log("Deu certo", ok))
-    .catch(error => console.log("Deu errado", error))
+    .then(resultado => [2, 3, 5, 10].map(number => resultado / number))
+    .then(sum => console.log(sum.reduce((acc, curr) => acc + curr, 0).toFixed(2)))
+    .catch(error => console.log(`${error} é mais de oito mil! Essa promise deve estar quebrada!`))
 }
 
 squaredNumber()
