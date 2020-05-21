@@ -26,4 +26,32 @@ const squaredNumber = () => {
     .catch(error => console.log(`${error} é mais de oito mil! Essa promise deve estar quebrada!`))
 }
 
-squaredNumber()
+// squaredNumber()
+
+//---------------------------
+
+const squaredNumberRefatorado = () => {
+  const newArray = new Array(10);
+  for (let i = 0; i < 10; i += 1) {
+    newArray[i] = Math.pow(Math.floor(Math.random() * 50), 2);
+  }
+  const sumAll = newArray.reduce((acc, curr) => {
+    return acc = acc + curr;
+  }, 0);
+  if (sumAll > 8000) throw new Error();
+  return sumAll;
+}
+
+const newArraySum = resultado => [2, 3, 5, 10].map(number => resultado / number);
+
+const asyncAwait = async () => {
+  try {
+    const resultado = await squaredNumberRefatorado();
+    const array = await newArraySum(resultado);
+    console.log(array);
+  } catch (error) {
+    console.log(`É mais de oito mil! Essa promise deve estar quebrada!`)
+  }
+}
+
+asyncAwait()
