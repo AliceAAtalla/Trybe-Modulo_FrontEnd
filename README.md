@@ -12,28 +12,28 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 6-2: *JavaScript libraries and CSS frameworks*
 - [x] 6-3: *CSS Flexbox - Part 1*
 - [x] 6-4: *CSS Flexbox - Part 2*
-- [x] 6-5: *[Project - Facebook home](https://github.com/AliceAAtalla/project-facebook-signup)*
+- [ ] 6-5: *[Project - Facebook home](https://github.com/AliceAAtalla/project-facebook-signup)*
 ##### Block 7: Introduction - Responsiveness & Animations with CSS
 - [x] 7-1: *Responsive CSS - Mobile First*
 - [x] 7-2: *CSS animations - Part 1*
 - [x] 7-3: *CSS animations - Part 2*
-- [x] 7-4: *[Project - The Daily Prophet](https://github.com/AliceAAtalla/projeto_profetadiario)*
+- [ ] 7-4: *[Project - The Daily Prophet](https://github.com/AliceAAtalla/projeto_profetadiario)*
 ##### Block 8: JavaScript ES6 & Unit Tests
 - [x] 8-1: *JavaScript ES6 - let, const, arrow functions and template literals*
 - [x] 8-2: *JavaScript ES6 - Objects*
 - [x] 8-3: *JavaScript unit tests*
 - [x] 8-4: *Testing in small steps*
-- [x] 8-5: *[Project - JavaScript Unit Tests]()*
+- [ ] 8-5: *[Project - JavaScript Unit Tests]()*
 ##### Block 9: JavaScript ES6
 - [x] 9-1: *JavaScript ES6 - Higher Order Functions - forEach, find, filter, some, every, sort*
 - [x] 9-2: *JavaScript ES6 - Higher Order Functions - map and reduce*
 - [x] 9-3: *JavaScript ES6 - spread operator, rest parameter, destructuring and more*
-- [x] 9-4: *[Project - Zoo functions]()*
+- [ ] 9-4: *[Project - Zoo functions]()*
 ##### Block 10: Asynchronicity & Callbacks
-- [x] 10-1: *First steps at Jest*
-- [x] 10-2: *Asynchronous JavaScript and Callbacks*
-- [x] 10-3: *JavaScript Promises*
-- [x] 10-4: *[Project - Shopping Cart]()*
+- [ ] 10-1: *First steps at Jest*
+- [ ] 10-2: *Asynchronous JavaScript and Callbacks*
+- [ ] 10-3: *JavaScript Promises*
+- [ ] 10-4: *[Project - Shopping Cart]()*
 ##### Block 11: Jest
 - [ ] 11-1: *Jest - Asynchronous Tests*
 - [ ] 11-2: *Jest - Simulating behaviors*
