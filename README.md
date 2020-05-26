@@ -30,9 +30,9 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 9-3: *JavaScript ES6 - spread operator, rest parameter, destructuring and more*
 - [ ] 9-4: *[Project - Zoo functions]()*
 ##### Block 10: Asynchronicity & Callbacks
-- [ ] 10-1: *First steps at Jest*
-- [ ] 10-2: *Asynchronous JavaScript and Callbacks*
-- [ ] 10-3: *JavaScript Promises*
+- [x] 10-1: *First steps at Jest*
+- [x] 10-2: *Asynchronous JavaScript and Callbacks*
+- [x] 10-3: *JavaScript Promises*
 - [ ] 10-4: *[Project - Shopping Cart]()*
 ##### Block 11: Jest
 - [ ] 11-1: *Jest - Asynchronous Tests*
