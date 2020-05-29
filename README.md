@@ -39,7 +39,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [ ] 11-2: *Jest - Simulating behaviors*
 - [ ] 11-3: *[Project - Asynchronous Jest and Mocking]()*
 ##### Block 12: Introduction - React
-- [ ] 12-1: *'Hello, world!' in React!*
+- [x] 12-1: *'Hello, world!' in React!*
 - [ ] 12-2: *React Components*
 - [ ] 12-3: *[Project - Movie Cards Library]()*
 ##### Block 13: React
