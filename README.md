@@ -41,7 +41,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 ##### Block 12: Introduction - React
 - [x] 12-1: *'Hello, world!' in React!*
 - [ ] 12-2: *React Components*
-- [ ] 12-3: *[Project - Movie Cards Library]()*
+- [ ] 12-3: *[Project - Movie Cards Library](https://github.com/AliceAAtalla/Projeto-Movie-Card)*
 ##### Block 13: React
 - [ ] 13-1: *Components with status*
 - [ ] 13-2: *React events and forms*
