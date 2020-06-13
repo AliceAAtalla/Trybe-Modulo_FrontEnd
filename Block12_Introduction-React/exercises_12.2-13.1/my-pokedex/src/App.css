@@ -1,0 +1,10 @@
+body,
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .pokedex {
+  background-image: url('./media/fundo-quadriculado-png-transparente4.png');
+} */
