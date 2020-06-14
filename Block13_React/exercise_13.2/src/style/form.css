@@ -1,0 +1,16 @@
+form {
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
+  width: 80px;
+  color: rgb(252, 252, 252);
+  background-color: rgb(60, 168, 182);
+}
