@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Button from './components/Button.jsx';
-import Alert from './components/Alert/Alert.jsx';
-import Dropdown from './components/Dropdown/Dropdown.jsx';
+import Button from './components/Button';
+import Alert from './components/Alert/Alert';
+import Dropdown from './components/Dropdown/Dropdown';
 
 const content = [
   { id: 1, item: 'The Office' },
@@ -18,29 +18,27 @@ class App extends Component {
       showModal: false,
       isDisableButton: false,
     };
+    this.changeShowComponent = this.changeShowComponent.bind(this);
   }
 
-  changeTitle = (value) => {
-    this.setState({ title: value });
-  };
-
-  changeShowComponent = () => {
+  changeShowComponent() {
     this.setState((state) => ({
       showModal: !state.showModal,
       isDisableButton: !state.isDisableButton,
     }));
-  };
+  }
 
   render() {
+    const { isDisableButton, showModal } = this.state;
     return (
-      <div className='main'>
+      <div className="main">
         <Button
-          content='Clique aqui'
-          isDisable={this.state.isDisableButton}
+          content="Clique aqui"
+          isDisable={isDisableButton}
           showComponent={this.changeShowComponent}
-          value='Título Show'
+          value="Título Show"
         />
-        {this.state.showModal && (
+        {showModal && (
           <Alert hideComponent={this.changeShowComponent}>
             {{ title: 'Algum título', content: 'Algum conteúdo', timeSeconds: 3 }}
           </Alert>

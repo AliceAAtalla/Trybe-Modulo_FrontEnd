@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
+    const { list } = this.props;
     this.state = {
       isOpen: false,
-      clickedItem: this.props.list[0].id,
+      clickedItem: list[0].id,
     };
   }
 
@@ -23,15 +24,16 @@ class Dropdown extends React.Component {
 
   render() {
     const { children, list } = this.props;
-    const { item } = list.find(({ id }) => id === this.state.clickedItem);
+    const { clickedItem, isOpen } = this.state;
+    const { item } = list.find(({ id }) => id === clickedItem);
     return (
       <>
-        <div className='main-dropdown'>
-          <h3 className='title'>{children}</h3>
-          <div className='container' onClick={this.toggle.bind(this)}>
+        <div className="main-dropdown">
+          <h3 className="title">{children}</h3>
+          <div className="container" onClick={this.toggle.bind(this)}>
             {item}
           </div>
-          <div className={this.state.isOpen ? 'dropdown-menu' : 'dropdown-menu-hidden'}>
+          <div className={isOpen ? 'dropdown-menu' : 'dropdown-menu-hidden'}>
             {list.map(({ id, item }) => (
               <div key={id} onClick={() => this.handleClick(id)}>
                 <span>{item}</span>
@@ -45,8 +47,12 @@ class Dropdown extends React.Component {
   }
 }
 
+Dropdown.defaultProps = {
+  children: 'Minha Lista',
+};
+
 Dropdown.propTypes = {
-  content: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number, item: PropTypes.string }))
+  list: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number, item: PropTypes.string }))
     .isRequired,
   children: PropTypes.string,
 };

@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Alert/Alert.css';
+import './Alert.css';
 
 const Alert = (props) => {
-  const { hideComponent, children: { title, content, timeSeconds }} = props;
+  const {
+    hideComponent,
+    children: { title, content, timeSeconds },
+  } = props;
+
   setTimeout(() => hideComponent(), timeSeconds * 1000);
   return (
-    <div className='Alert'>
+    <div className="Alert">
       <h1>{title}</h1>
       <p>{content}</p>
     </div>
@@ -24,10 +28,10 @@ Alert.prototypes = {
 
 Alert.defaultProps = {
   children: {
-    title: "Algum título",
-    content: "Algum conteúdo",
-    timeSeconds: 3
-    },
-}
+    title: 'Algum título',
+    content: 'Algum conteúdo',
+    timeSeconds: 3,
+  },
+};
 
 export default Alert;
