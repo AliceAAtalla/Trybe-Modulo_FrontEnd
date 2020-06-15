@@ -1,0 +1,31 @@
+.main-dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  border: 0.1rem solid rebeccapurple;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+.title {
+  margin: 10px;
+  padding: 5px;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border: 0.1rem solid rebeccapurple;
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+.dropdown-menu-hidden {
+  display: none;
+}
