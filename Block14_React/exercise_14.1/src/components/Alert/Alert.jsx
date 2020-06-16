@@ -17,7 +17,7 @@ const Alert = (props) => {
   );
 };
 
-Alert.proptypes = {
+Alert.propTypes = {
   hideComponent: PropTypes.func.isRequired,
   children: PropTypes.shape({
     title: PropTypes.string.isRequired,

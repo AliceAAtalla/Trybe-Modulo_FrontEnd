@@ -51,7 +51,7 @@ Dropdown.defaultProps = {
   children: 'Minha Lista',
 };
 
-Dropdown.proptypes = {
+Dropdown.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number, item: PropTypes.string }))
     .isRequired,
   children: PropTypes.string,
