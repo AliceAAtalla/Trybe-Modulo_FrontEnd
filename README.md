@@ -48,21 +48,23 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 13-3: *[Project - Movie Cards Library Stateful](https://github.com/tryber/sd-04-block12-project-movie-card-library-stateful)*
 ##### Block 14: React
 - [x] 14-1: *Improving component reuse: props.children and PropTypes*
-- [ ] 14-2: *React component life cycle*
-- [ ] 14-3: *React Router*
+- [x] 14-2: *React component life cycle*
+- [x] 14-3: *React Router*
 - [x] 14-4: *[Project - Movie Cards Library CRUD](https://github.com/tryber/sd-04-project-movie-card-library-crud/pull/35)*
 ##### Block 15: Agile Methodologies
 - [x] 15-1: *Agile Methodologies*
 - [ ] 15-2: *[Project - Frontend Online Store]()*
 ##### Block 16: React
 - [x] 16-1: *Testing React with the React Testing Library - Private*
-- [ ] 16-2: *Testing React with the React Testing Library - Part 2*
-- [ ] 16-3: *[Project - React Tests]()*
+- [x] 16-2: *Testing React with the React Testing Library - Part 2*
+- [x] 16-3: *[Project - React Tests](https://github.com/tryber/sd-04-project-react-testing-library/pull/31)*
 ##### Block 17: React
-- [ ] 17-1: *Introduction to Redux*
-- [ ] 17-2: *React with Redux - part 1*
-- [ ] 17-3: *React with Redux - part 2*
-- [ ] 17-4: *[Project - Table with data filters]()*
+- [x] 17-1: *Introduction to Redux*
+- [x] 17-2: *React with Redux - part 1* - Private
+- [ ] 17-3: *React with Redux - Practice*
+- [ ] 17-4: *React with Redux - part 2*
+- [ ] 17-5: *Testes síncronos com React-Redux*
+- [ ] 17-6: *[Project - Table with data filters]()*
 ##### Block 18: React
 - [ ] 18-1: *[Project - Trivia Game]()*
 ##### Block 19: React & Redux
